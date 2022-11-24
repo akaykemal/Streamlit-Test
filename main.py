@@ -61,7 +61,7 @@ with modelTraining:
     sel_col.text('list of data')
     sel_col.write(taxi_data.columns)
     
-    input_feature = sel_col.text_input('Which feature should be used as the input feature?','Zone')
+    input_feature = sel_col.text_input('Which feature should be used as the input feature?','LocationID')
 
     if n_estimators == 'No Limit':
         regr = RandomForestRegressor(max_depth=max_depth)
